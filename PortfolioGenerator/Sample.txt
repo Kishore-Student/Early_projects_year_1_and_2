@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <header class="bg-{bgc} p-3 text-center text-{txtcol}">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1>{Name}</h1>
+    </header>
+
+    <main>
+      <section id="about" class="p-5 text-center text-{Theme1}">
+        <h2>About Me</h2>
+        <img src={MyImg} alt="Profile Image" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+        <small class="text-muted">{Response}</small>
+      </section>
+
+      <section id="skills" class="text-center bg-light p-3">
+        <h2 class="text-primary">Skills</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">{Skill1}</h3>
+                <p class="card-text">{Response1}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">{Skill2}</h3>
+                <p class="card-text">{Response2}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">{Skill3}</h3>
+                <p class="card-text">{Response3}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="text-center bg-{txtcol2} p-3">
+        <h2 class="text-primary">Projects</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <img src="{Projectimg}" alt="Project Image" class="img-fluid">
+                <h5 class="card-title">{Project}</h5>
+                <p class="card-text">{MyProject}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
