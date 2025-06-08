@@ -1,0 +1,246 @@
+body, html, #root {
+  margin: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('./Assets/Back.jpeg') center/cover fixed no-repeat;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007ACC;
+  color: white;
+  padding: 10px 20px;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.branding {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.branding h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.navbar {
+  display: flex;
+  background-color: #004e89;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+.nav-item {
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color:#004e89;
+  margin-right: 40px;
+
+}
+
+.nav-item:hover {
+  background-color: turquoise;
+  color: #004e89;
+  transition: 0.2s ease-in-out;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about {
+  background-color: #007acc;
+  padding: 20px;
+  color: whitesmoke;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 10px rgba(0, 191, 255, 0.3),
+    0 0 10px rgba(255, 20, 147, 0.2);
+  flex: 1 1 350px;
+  min-width: 600px;
+
+}
+
+
+.feature-card {
+  background-color: #007acc;
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.15),
+    0 0 12px rgba(0, 191, 255, 0.3);
+  flex: 1 1 400px;
+}
+
+.feature-card img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feature-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #111;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+}
+
+.footer a {
+  color: #004e89;
+  font-weight: bold;
+}
+
+.feature-card img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .about, .feature-card {
+    width: 100%;
+    max-width: none;
+  }
+}
+/* __________________________________________________________________________________________________*/
+
+body, html, #root {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('./Assets/Back.jpeg') center/cover fixed no-repeat;
+  color: #333;
+}
+
+
+.appoint-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container, .rules {
+  flex: 1 1 450px;
+  max-width: 500px;
+}
+
+.form {
+  background-color: #007acc;
+  color: whitesmoke;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  align-self: flex-start;
+}
+
+.rules {
+  background-color: #007acc;
+  color: whitesmoke;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,191,255,0.3), 0 0 10px rgba(255,20,147,0.2);
+  width: 100%;
+  max-width: 400px;
+  align-self: flex-end;
+}
+
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #007acc;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+}
+
+
+
